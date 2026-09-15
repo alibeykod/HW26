@@ -3,4 +3,41 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
+    <listener>
+        <listener-class>ir.maktabsharif.ali_rafibeyk_hw26_maktab146.part1.util.AppContext</listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>allBooks</servlet-name>
+        <servlet-class>ir.maktabsharif.ali_rafibeyk_hw26_maktab146.part1.servlets.FindAllBooksServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>create</servlet-name>
+        <servlet-class>ir.maktabsharif.ali_rafibeyk_hw26_maktab146.part1.servlets.CreateBookServlet</servlet-class>
+   
+        <init-param>
+            <param-name>maxBooksLimit</param-name>
+            <param-value>50</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>findByCategory</servlet-name>
+        <servlet-class>ir.maktabsharif.ali_rafibeyk_hw26_maktab146.part1.servlets.FindByCategoryServlet</servlet-class>
+    </servlet>
+    
+    
+    
+    <servlet-mapping>
+        <servlet-name>allBooks</servlet-name>
+        <url-pattern>/allBooks</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>create</servlet-name>
+        <url-pattern>/create</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>findByCategory</servlet-name>
+        <url-pattern>/find</url-pattern>
+    </servlet-mapping>
 </web-app>

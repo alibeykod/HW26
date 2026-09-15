@@ -1,0 +1,15 @@
+.form{
+    border: black 1px solid;
+    align-content: center;
+}
+.background{
+    background: coral;
+}
+.input{
+    background-color: #110101;
+    color: white;
+    font-size: large;
+}
+#just{
+    background-color: cornflowerblue;
+}

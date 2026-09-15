@@ -1,0 +1,15 @@
+.table{
+    border: #110101 1px solid;
+}
+.tr{
+    border: #110101 1px solid;
+}
+th{
+    border: #110101 1px solid;
+}
+td{
+    border: #110101 1px solid;
+}
+#bigtd{
+    background-color: cornflowerblue;
+}
